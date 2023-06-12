@@ -37,6 +37,7 @@ int main () {
     cout<<numbersStack.size()<<endl;
 
     numbersStack.pop();
+    numbersStack.pop();
 
     cout<<"Top is: "<<numbersStack.top()<<endl;
     cout<<"The element in the stack are: "<<endl;
