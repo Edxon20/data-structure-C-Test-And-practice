@@ -9,6 +9,15 @@ int Value;
 Node* Next; 
 };
 
+void printList(Node *n) {
+    while (n!=NULL)
+    {
+        cout << n->Value <<endl;
+        n = n->Next;        
+    }
+    
+}
+
 int main () {
 //firts element
 Node* head = new Node();
@@ -22,6 +31,9 @@ second->Value = 2;
 second->Next = third;
 
 third->Value = 4;
+third->Next = NULL;
+
+printList(head);
 
 return 0;
 }
