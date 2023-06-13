@@ -14,8 +14,7 @@ void printList(Node *n) {
     {
         cout << n->Value <<endl;
         n = n->Next;        
-    }
-    
+    }    
 }
 
 int main () {
