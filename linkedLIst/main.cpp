@@ -18,7 +18,6 @@ void printList(Node *n) {
 }
 
 void insertAtFront(Node**head, int newValue) {
-
     //1. Prepare a newNode
     Node* newNode = new Node();
     newNode->Value = newValue;
@@ -26,8 +25,30 @@ void insertAtFront(Node**head, int newValue) {
     newNode->Next = *head;
     //3. MOve head of the list to point to the newNode
     *head = newNode;
+}
 
+void insertAtTheEnd(Node**head, int newValue){
 
+    //1. Prepare a newNode
+    Node* newNode = new Node();
+    newNode->Value = newValue;
+    newNode->Next = NULL;
+
+    //2. If LinkedList is empty, newNode will be a head node
+
+    if(*head==NULL){
+        *head = newNode;
+        return;
+    }
+
+    //3. Find the last node
+    Node* last = *head;
+    while(last->Next != NULL){        
+        last = last->Next;
+    }  
+
+    //4. Insert newNode after last node (at the end)
+     last->Next = newNode;
 
 }
 
@@ -46,11 +67,16 @@ second->Next = third;
 third->Value = 4;
 third->Next = NULL;
 
-cout<<"LinkedList standar: "<<endl;
-printList(head);
-cout<<endl;
-insertAtFront(&head, -22);
-cout<<"LinkedList add a new value in front: "<<endl;
+// cout<<"LinkedList standar: "<<endl;
+// printList(head);
+// cout<<endl;
+// insertAtFront(&head, -22);
+// insertAtFront(&head, -20);
+// cout<<"LinkedList add a new value in front: "<<endl;
+// printList(head);
+// cout<<endl;
+
+insertAtTheEnd(&head, 10);
 printList(head);
 
 return 0;
