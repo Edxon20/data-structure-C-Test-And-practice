@@ -6,12 +6,10 @@ void getMinAndMax(int numbers [], int size, int* min, int* max){
     for (int i = 0; i < size; i++)
     {
         if(numbers[i] > *max)
-            *max = numbers[i];
-        
+            *max = numbers[i];        
 
         if(numbers[i] < *min)
-            *min = numbers[i];
-        
+            *min = numbers[i];        
     }          
   
 }
@@ -27,6 +25,8 @@ int main () {
 
     cout<<"Min: "<<min<<endl;
     cout<<"Max: "<<max<<endl;
+
+    delete[]numbers;
 
     return 0;
 }

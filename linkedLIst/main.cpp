@@ -41,7 +41,7 @@ void insertAtTheEnd(Node**head, int newValue){
         return;
     }
 
-    //3. Find the last node
+    //3. Find the last node //Then 
     Node* last = *head;
     while(last->Next != NULL){        
         last = last->Next;

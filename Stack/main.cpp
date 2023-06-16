@@ -13,7 +13,7 @@ void printStackElements(stack<int> stack) {
 }
 
 int main () {
-
+    //LIFO
     //Principal functions:
     //empty, size, push, pop, top
     stack<int> numbersStack;

@@ -31,6 +31,7 @@ int main () {
     cout << "My Queue: "<< endl;
 
     printQueue(myQueue);
+    //FIFO 
 
 
 

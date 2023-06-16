@@ -9,7 +9,7 @@ using namespace std;
         cout<<*charPtr<<endl;
     }
     // A general way to print
-    
+
     void print(void* ptr, char type ){
         switch(type){
             case 'i': cout<< *((int*)ptr) <<endl; break;
@@ -29,6 +29,7 @@ int main () {
 
     print(&number, 'i');
     print(&letter, 'c');
+    
 
 
     return 0;
