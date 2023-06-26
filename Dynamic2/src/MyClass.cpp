@@ -1,4 +1,4 @@
-#include "../header/MyClass.h"
+#include "MyClass.hpp"
 #include <iostream>
 
 int fibonacci::fib(int n,int* memo){    
@@ -17,11 +17,4 @@ int fibonacci::fib(int n,int* memo){
     memo[n] = result;
     return result;
 }
-
-void operations::printArr(int *arr, int size){
-    for (int i = 1; i < size; i++)
-    {
-        std::cout<<arr[i]<<std::endl;
-    }
-    
-}
+  

@@ -1,4 +1,4 @@
-#include "../header/MyClass.h"
+#include <MyClass.hpp>
 #include <iostream>
 
 void printArr(int *arr,int size){     

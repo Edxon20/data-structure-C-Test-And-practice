@@ -6,11 +6,6 @@ class fibonacci{
     int fib(int n, int* memo);   
 };
 
-class operations{
-    public:
-    void printArr(int *arr, int size);
-};
-
 
 
 #endif
